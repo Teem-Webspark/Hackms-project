@@ -8,12 +8,57 @@
       --outline :.1rem solid rgba(0,0,0,1);
       --outline-hover :.1rem solid var(--black);
 }
-
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: all .2s linear;
+}
 html {
     font-size: 62%;
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
+}
+body {
+    background: #eee;
+}
+section {
+    padding: 2rem 20%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--black);
+}
+.heading span{
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0%, 93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+}
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+    
+}
+.btn:hover{
+    background: var(--orange);
+    color: #fff;
 }
 
 .header {
@@ -25,6 +70,14 @@ html {
     justify-content: space-between;
     padding: 2rem 9%;
     background: #fff;
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+.header .logo i{
+    color: var(--orange);
 }
 .header .navbar a{
     font-size: 2rem;
@@ -50,6 +103,149 @@ html {
 .header .icon div:hover{
     color: var(--brown);
 }
+
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    height: 4.5rem;
+    width: 50rem;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+}
+.header .search-form.active{
+    right: 5px;
+    transition: .4s linear;
+}
+.header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform:none;
+    font-size: 18px;
+    color: var(--black);
+    padding: 20px;
+}
+.header .search-form label{
+    font-size: 15px;
+    padding-right: 20px;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: var(--brown);
+}
+
+
+.header .shopping-cart{
+    position: absolute;
+    top: 110%; right: -110%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 350px;
+    background: #fff;
+}
+.header .shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin: 10px;
+}
+.header .shopping-cart .box img{
+    height: 10rem;
+}
+.header .library-cart .box .fa-trash{
+    font-size: 20px;
+    position: absolute;
+    top: 50%; right: 20px;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+.header .library-cart .box .fa-trash:hover{
+    color: var(--orange);
+}
+.header .library-cart .box .content h3{
+    color: var(--black);
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.header .library-cart .box .content span{
+    color: var(--light-color);
+    font-size: 10px;
+}
+.header .library-cart .box .content quantity{
+    color: var(--light-color);
+    font-size: 10px;
+    padding-left: 10px;
+}
+.header .shopping-cart .total{
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    color: var(--black);
+}
+.header .shopping-cart .btn{
+    display :block;
+    text-align: center;
+    margin: 5px;
+}
+.header .shopping-cart.active{
+    right: 5px;
+    transition: .4s linear;
+}
+
+.header .login-form{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 30rem;
+    background: #fff;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    text-align: center;
+}
+.header .login-form h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.header .login-form .box{
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    background: #eee;
+    border-radius: 5px;
+    color: var(--black);
+    text-transform: none;
+}
+.header .login-form p{
+    font-size: 10px;
+    padding: 5px;
+    color: var(--light-color);
+}
+.header .login-form p a{
+    font-size: 8px;
+    text-decoration: underline;
+}
+.header .login-form p a:hover{
+    color: var();
+}
+.header .login-form.active{
+    right: 5px;
+    transition: .4s linear;
+}
+
 
 
 

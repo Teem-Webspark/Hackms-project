@@ -77,7 +77,7 @@ section {
     color: var(--black);
 }
 .header .logo i{
-    color: var(--orange);
+    color: var(--brown);
 }
 .header .navbar a{
     font-size: 2rem;
@@ -163,7 +163,7 @@ section {
 .header .shopping-cart .box img{
     height: 10rem;
 }
-.header .library-cart .box .fa-trash{
+.header .shopping-cart .box .fa-trash{
     font-size: 20px;
     position: absolute;
     top: 50%; right: 20px;
@@ -171,19 +171,19 @@ section {
     color: var(--light-color);
     transform: translateY(-50%);
 }
-.header .library-cart .box .fa-trash:hover{
+.header .shopping-cart .box .fa-trash:hover{
     color: var(--orange);
 }
-.header .library-cart .box .content h3{
+.header .shopping-cart .box .content h3{
     color: var(--black);
     font-size: 14px;
     padding-bottom: 10px;
 }
-.header .library-cart .box .content span{
+.header .shopping-cart .box .content span{
     color: var(--light-color);
     font-size: 10px;
 }
-.header .library-cart .box .content quantity{
+.header .shopping-cart .box .content quantity{
     color: var(--light-color);
     font-size: 10px;
     padding-left: 10px;

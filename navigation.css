@@ -51,24 +51,5 @@ html {
     color: var(--brown);
 }
 
-#menu-btn{
-    display: none;
-}
 
-.header .search-form{
-    position: absolute;
-    top: 110%; right: -110%;
-    width: 50rem;
-    height: 4.5rem;
-    background: #fff;
-    border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-}
 
-.header .search-form.active{
-    right: 5px;
-    transition: .4s linear;
-}

@@ -1,31 +1,40 @@
-<?php
-include "db.php";
-if(isset($_POST['submit'])){
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
-    $role ="user";
 
-    $sql = "insert into users(name,email,password,phone,address,role) values('$name','$email','$password','$phone', '$address','$role')";
-    $result = mysqli_query($conn,$sql);
-    if(!$result){
-        echo "Error!:{$conn->error}";
-    }
-    else{
-        echo"Registered succcessfully!";
-    }
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+<div class="container">
+    <h1>Register</h1>
+
+    <form id="registerForm" action="action.php">
+        <label for="username">Username</label>
+        <input type="text" id="username" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <button type="submit">Create Account</button>
+          
+    </form>
+
+    <p id="message"></p>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+
+</div>
+<script src="register.js"></script>
 </body>
 </html>

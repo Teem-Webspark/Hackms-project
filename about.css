@@ -13,18 +13,26 @@
         background-position-x: -800px;
     }
 }
+section {
+    padding: 2rem 10%;
+}
 body{
     background: #f3edee;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    color:rgb(141, 22, 28)
+    color: #330404;
 }
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
     text-align: center;
     font-size: 2.5rem;
+    color: #330404;
     
+}
+p{
+    font-size: 1.4rem;
+    text-align: center;
 }
 h2 span{
     display: inline-block;
@@ -103,6 +111,10 @@ h2 span{
     left: 0;
     color: #380606;
     font-weight: bold;
+}
+h3{
+    text-align: center;
+    font-size: 1.4rem;
 }
 
 

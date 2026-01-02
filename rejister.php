@@ -1,4 +1,27 @@
+<?php
+include "db.php";
 
+if (isset($_POST['submit'])) {
+
+    $name     = $_POST['username'];
+    $email    = $_POST['email'];
+    $password = $_POST['password'];
+    $phone    = $_POST['phone'];
+    $address  = $_POST['address'];
+    $role     = "user";
+
+    $sql = "INSERT INTO users (name, email, password, phone, address, role)
+            VALUES ('$name', '$email', '$password', '$phone', '$address', '$role')";
+
+    $result = mysqli_query($conn, $sql);
+
+    if (!$result) {
+        echo "Error: " . mysqli_error($conn);
+    } else {
+        echo "Registered successfully!";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,30 +34,32 @@
 <div class="container">
     <h1>Register</h1>
 
-    <form id="registerForm" action="action.php">
-        <label for="username">Username</label>
-        <input type="text" id="username" required>
+    <form method="POST" action="">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" required>
+        <label>Username</label>
+        <input type="text" name="username" required>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
 
-        <label for="confirm">Confirm Password</label>
-        <input type="password" id="confirm" required>
-        
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required>
+        <label>Phone</label>
+        <input type="text" name="phone" required>
 
-        <button type="submit">Create Account</button>
-          
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <label>Confirm Password</label>
+        <input type="password" name="confirm" required>
+
+        <label>Address</label>
+        <input type="text" name="address" required>
+
+        <button type="submit" name="submit">Create Account</button>
+
     </form>
 
-    <p id="message"></p>
     <p>Already have an account? <a href="login.html">Login</a></p>
-
 </div>
-<script src="register.js"></script>
+
 </body>
 </html>

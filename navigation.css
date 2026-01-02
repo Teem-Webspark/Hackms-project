@@ -3,9 +3,9 @@
       --brown : rgb(95,24,24);
       --black : #130f40;
       --light-color :#666;
-      --box-shadow :0 .5rem 1rem rgba(0,0,0,1);
-      --border :2rem solid rgba(0,0,0,1);
-      --outline :.1rem solid rgba(0,0,0,1);
+      --box-shadow :0 .5rem 1rem rgba(95,24,24,.8);
+      --border :2rem solid rgba(95,24,24,.8);
+      --outline :.1rem solid rgba(95,24,24,.8);
       --outline-hover :.1rem solid var(--black);
 }
 *{
@@ -27,7 +27,7 @@ body {
     background: #eee;
 }
 section {
-    padding: 2rem 20%;
+    padding: 2rem 10%;
 }
 
 .heading{
@@ -38,7 +38,7 @@ section {
     color: var(--black);
 }
 .heading span{
-    background: var(--orange);
+    background: var(--brown);
     color: #fff;
     display: inline-block;
     padding: .5rem 3rem;
@@ -57,7 +57,7 @@ section {
     
 }
 .btn:hover{
-    background: var(--orange);
+    background: var(--brown);
     color: #fff;
 }
 
@@ -82,10 +82,16 @@ section {
 .header .navbar a{
     font-size: 2rem;
     margin: 0 1rem;
-    color: black
+    color: black;
+    border-radius: 50px;
+    transition: .3s ease;
+    padding: .9rem;
+    margin: 1.2rem;
+    
 }
 .header .navbar a:hover {
-    color: var(--brown);
+    color: #fff;
+    background-color: var(--brown);
 }
 
 .header .icon div {
@@ -203,6 +209,93 @@ section {
     right: 5px;
     transition: .4s linear;
 }
+
+.home{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background: url(/images/bg-home.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 30rem;
+}
+
+
+.home .content{
+    text-align: center;
+    width: 60rem;
+
+}
+.home .content h3{
+    color: var(--black);
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+
+.home .content p{
+    color: black;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.about-us{
+    
+    
+}
+
+
+.about-us .div-about{
+    text-align: center;
+    width: 60rem;
+
+}
+
+.about-us .div-about p{
+    color: black;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.product .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+.product .box-container .box{
+    padding: 3rem 2rem;
+    background: #f6f8f5;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+.product .box-container .box:hover{
+    outline: var(--outline-hover);
+    outline-offset: 0rem;
+}
+.product .box-container .box img{
+    margin: 1rem;
+    height: 15rem;
+}
+.product .box-container .box h3{
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--black);
+}
+.product .box-container .box p{
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--light-color);
+}
+
+
+
 
 
 

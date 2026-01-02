@@ -26,13 +26,6 @@ document.querySelector('#cart-btn')?.addEventListener('click', () => {
   navbar?.classList.remove('active');
 });
 
-document.querySelector('#login-btn')?.addEventListener('click', () => {
-  loginForm?.classList.toggle('active');
-  searchForm?.classList.remove('active');
-  shoppingCart?.classList.remove('active');
-  navbar?.classList.remove('active');
-});
-
 document.querySelector('#menu-btn')?.addEventListener('click', () => {
   navbar?.classList.toggle('active');
   searchForm?.classList.remove('active');

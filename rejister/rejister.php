@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
     if (!$result) {
         echo "Error: " . mysqli_error($conn);
     } else {
-        echo "Registered successfully!";
+        echo "<p class='successreg'>Registered successfully!</p>";
     }
 }
 ?>

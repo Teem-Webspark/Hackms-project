@@ -15,11 +15,11 @@ if(isset($_POST['submit'])){
           $_SESSION['user_role'] = $row['role'];
         }
         else{
-            echo"Wrong password";
+            echo"<p class='wronglogin'>Wrong password!</p>";
         }
     }
     else{
-        echo "please! go for sing up";
+        echo "<p class='singfist'>please!,go for sing up!</p>";
 }
 
 ?>

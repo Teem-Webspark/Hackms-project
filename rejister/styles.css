@@ -10,7 +10,12 @@ body {
     height: 100vh;
     margin-top: 20rem;
 }
-
+.successreg {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
 
 
 input {

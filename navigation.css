@@ -204,48 +204,126 @@ section {
     transition: .4s linear;
 }
 
-.header .login-form{
-    position: absolute;
-    top: 110%; right: -110%;
-    width: 30rem;
-    background: #fff;
-    border-radius: 2rem;
-    box-shadow: var(--box-shadow);
-    padding: 20px;
-    text-align: center;
-}
-.header .login-form h3{
-    font-size: 25px;
-    text-transform: uppercase;
-    color: var(--black);
-}
-.header .login-form .box{
-    margin: 5px;
-    padding: 10px;
-    width: 100%;
-    font-size: 15px;
-    background: #eee;
-    border-radius: 5px;
-    color: var(--black);
-    text-transform: none;
-}
-.header .login-form p{
-    font-size: 10px;
-    padding: 5px;
-    color: var(--light-color);
-}
-.header .login-form p a{
-    font-size: 8px;
-    text-decoration: underline;
-}
-.header .login-form p a:hover{
-    color: var();
-}
-.header .login-form.active{
-    right: 5px;
-    transition: .4s linear;
-}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    section {
+    padding: 2rem;
+}
+}
+@media(max-width:768px){
+
+    #menu-btn{
+    display: inline-block;
+}
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+    .header .navbar a{
+        margin: 2rem 2.5rem;
+        font-size: 20px;
+        display: block;
+    }
+
+}
+
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+}

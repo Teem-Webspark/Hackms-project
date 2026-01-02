@@ -19,6 +19,13 @@ document.querySelector('#search-btn')?.addEventListener('click', () => {
   navbar?.classList.remove('active');
 });
 
+document.querySelector('#menu-btn')?.addEventListener('click', () => {
+  navbar?.classList.toggle('active');
+  searchForm?.classList.remove('active');
+  shoppingCart?.classList.remove('active');
+  loginForm?.classList.remove('active');
+});
+
 document.querySelector('#cart-btn')?.addEventListener('click', () => {
   shoppingCart?.classList.toggle('active');
   searchForm?.classList.remove('active');
@@ -26,9 +33,8 @@ document.querySelector('#cart-btn')?.addEventListener('click', () => {
   navbar?.classList.remove('active');
 });
 
-document.querySelector('#menu-btn')?.addEventListener('click', () => {
-  navbar?.classList.toggle('active');
-  searchForm?.classList.remove('active');
-  shoppingCart?.classList.remove('active');
-  loginForm?.classList.remove('active');
-});
+
+
+
+
+

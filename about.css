@@ -1,0 +1,114 @@
+.image{height: 100vh;
+    background-image: url('books.jpeg');
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    position: relative;
+    animation: animate 10s linear infinite;
+    color: rgb(100, 17, 17);
+    height:20rem;
+}
+@keyframes animate {
+    to {
+        background-position-x: -800px;
+    }
+}
+body{
+    background: #f3edee;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color:rgb(141, 22, 28)
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+h2 span{
+    display: inline-block;
+    color:#fff;
+    background: rgb(95, 24, 24, 1);
+    padding: .8rem  .9rem;
+    clip-path: polygon(100% 0%, 93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+}
+.about-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    border-radius: 12px;
+}
+
+.about-container h2 {
+    text-align: center;
+    color: #330404;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.about-container  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+}
+
+.about-container ul li {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(248, 197, 197, 0.05);
+    border-top: 4px solid #490b0b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #922a2f;
+    transition: transform 0.3s ease;
+}
+
+.about-container ul li:hover {
+    transform: translateY(-5px);
+}
+
+.item {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.item ul li {
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: #440911;
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.item ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #380606;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .about-container ul {
+        grid-template-columns: 1fr;
+    }
+}
+

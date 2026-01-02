@@ -242,15 +242,14 @@ section {
     line-height: 1.8;
 }
 
-.about-us{
-    
-    
-}
+
 
 
 .about-us .div-about{
-    text-align: center;
-    width: 60rem;
+    display: flex;
+    justify-content: center;
+    width: 80rem;
+    padding: auto;
 
 }
 

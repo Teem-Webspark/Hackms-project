@@ -1,65 +1,37 @@
 <?php
-include "db.php";
+include("db.php");
+session_start();
 
 if (isset($_POST['submit'])) {
 
-    $name     = $_POST['username'];
-    $email    = $_POST['email'];
+    $email = $_POST['email'];
     $password = $_POST['password'];
-    $phone    = $_POST['phone'];
-    $address  = $_POST['address'];
-    $role     = "user";
 
-    $sql = "INSERT INTO users (name, email, password, phone, address, role)
-            VALUES ('$name', '$email', '$password', '$phone', '$address', '$role')";
+    // Prepared statement (SECURE)
+    $stmt = $conn->prepare("SELECT id, name, role, password FROM users WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
-    $result = mysqli_query($conn, $sql);
+    if ($result->num_rows === 1) {
+        $row = $result->fetch_assoc();
 
-    if (!$result) {
-        echo "Error: " . mysqli_error($conn);
+        // Verify hashed password
+        if (password_verify($password, $row['password'])) {
+
+            $_SESSION['user_id'] = $row['id'];
+            $_SESSION['user_name'] = $row['name'];
+            $_SESSION['user_role'] = $row['role'];
+
+            // Redirect on success
+            header("Location: navigation.html");
+            exit();
+
+        } else {
+            $error = "Wrong password!";
+        }
     } else {
-        echo "<p class='successreg'>Registered successfully!</p>";
+        $error = "Email not found! Please sign up.";
     }
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Register</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<div class="container">
-    <h1>Register</h1>
-
-    <form method="POST" action="">
-
-        <label>Username</label>
-        <input type="text" name="username" required>
-
-        <label>Email</label>
-        <input type="email" name="email" required>
-
-        <label>Phone</label>
-        <input type="text" name="phone" required>
-
-        <label>Password</label>
-        <input type="password" name="password" required>
-
-        <label>Confirm Password</label>
-        <input type="password" name="confirm" required>
-
-        <label>Address</label>
-        <input type="text" name="address" required>
-
-        <button type="submit" name="submit">Create Account</button>
-
-    </form>
-
-    <p>Already have an account? <a href="login.html">Login</a></p>
-</div>
-
-</body>
-</html>

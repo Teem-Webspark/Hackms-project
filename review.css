@@ -1,0 +1,99 @@
+* {
+    margin-top: 150px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.reviews {
+    
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.rating-box {
+    text-align: center;
+    min-width: 120px;
+    
+}
+
+.rating-box h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.rating-box .stars {
+    font-size: 22px;
+    color: #f4a261;
+}
+
+.review-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    width: 230px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    background: #5dade2;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.avatar.green {
+    background: #7cb342;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card .stars {
+    color: #f4a261;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #4285f4;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}

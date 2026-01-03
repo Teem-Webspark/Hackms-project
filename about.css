@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+
+.image {
+    width: 100%;
+    height: 60vh;
+    background-image: url('books.jpeg');
+    background-size: cover;
+    background-position: center;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+    to {
+        background-position-x: -800px;
+    }
+}
+
+
+.about-section {
+    width: 100%;
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+
+.about-container {
+    max-width: 1300px;   
+    margin: auto;
+    padding: 40px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #330404;
+}
+
+.intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.8rem;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 60px 0 30px;
+    color: #330404;
+}
+p{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 60px 0 30px;
+    color: black;
+
+}
+
+
+h2 span {
+    color: #fff;
+    background: rgb(95, 24, 24);
+    padding: .7rem 1.2rem;
+    clip-path: polygon(100% 0%, 93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
+}
+
+
+.main-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+}
+
+
+.main-list > li {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    border-top: 4px solid #490b0b;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #922a2f;
+    transition: transform 0.3s ease;
+}
+
+.main-list > li:hover {
+    transform: translateY(-8px);
+}
+
+
+.item {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.item ul {
+    list-style: none;
+}
+
+.item ul li {
+    font-size: 0.95rem;
+    font-weight: normal;
+    color: #440911;
+    padding: 8px 0 8px 25px;
+    position: relative;
+}
+
+.item ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #380606;
+    font-weight: bold;
+}
+
+
+.contact {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.contact p {
+    font-size: 1.3rem;
+    color: #490b0b;
+}
+
+
+@media (max-width: 768px) {
+    .image {
+        height: 40vh;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+}

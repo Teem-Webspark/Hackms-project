@@ -242,8 +242,8 @@ section {
 
 .home{
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
     background: url(/images/bg-home.jpeg);
     background-repeat: no-repeat;
     background-position: center;
@@ -259,15 +259,15 @@ section {
 
 }
 .home .content h3{
-    color: var(--black);
-    font-size: 4rem;
+    color: #fff;
+    font-size: 6rem;
     font-weight: bolder;
 }
 
 
 .home .content p{
-    color: black;
-    font-size: 1.7rem;
+    color: #fff;
+    font-size: 2rem;
     padding: 1rem 0;
     line-height: 1.8;
 }
@@ -282,6 +282,7 @@ section {
     margin: 0 auto 40px;
     font-size: 1.8rem;
     color: black;
+    line-height: 4rem;
 }
 
 

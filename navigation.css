@@ -8,6 +8,36 @@
       --outline :.1rem solid rgba(95,24,24,.8);
       --outline-hover :.1rem solid var(--black);
 }
+
+:root {
+    --white-color: #fff;
+    --dark-color: #252525;
+    --primary-color: #3b141c;
+    --secondary-color: #f3961c;
+    --light-pink-color: #faf4f5;
+    --medium-gray-color: #ccc;
+
+    --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%;
+
+    --site-max-width: 1300px;
+    
+
+}
+
 *{
     font-family: "Poppins", sans-serif;
     margin: 0; padding: 0;
@@ -245,21 +275,16 @@ section {
 
 
 
-.about-us .div-about{
-    display: flex;
-    justify-content: center;
-    width: 80rem;
-    padding: auto;
 
-}
-
-.about-us .div-about p{
-    color: black;
-    font-size: 1.7rem;
-    padding: 1rem 0;
-    line-height: 1.8;
+.para{
     text-align: center;
+    width: 98%;
+    margin: 0 auto 40px;
+    font-size: 1.8rem;
+    color: black;
 }
+
+
 
 .product .box-container{
     display:grid;
@@ -291,6 +316,48 @@ section {
     font-size: 1rem;
     line-height: 2rem;
     color: var(--light-color);
+}
+
+.testimonials-section {
+  padding: 50px 0 100px;
+  background-color: var(--light-pink-color);
+}
+.testimonials-section .testimonials {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  text-align: center;
+  align-items: center;
+
+
+}
+.testimonials-section .testimonials .user-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 50px;
+  border-radius: var(--border-radius-circle);
+}
+.testimonials-section .testimonials .name {
+  margin-top: 16px;
+  font-size: var(--font-size-m);
+  justify-content: center;
+}
+.testimonials-section .testimonials .feedback {
+ line-height: 25px;
+
+}
+.swiper-button-next .swiper-button-prev {
+  display: none;
+  color: #000;
+  z-index: 10;
+  overflow: hidden;
+}
+.testimonials-section .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  background: var(--secondary-color);
 }
 
 

@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <title>About Us</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
+
+    <!-- start navigation bar-->
+     <header class="header">
+        <a href="#" class="logo"><i class="fas fa-book"></i> BookWorld</a>
+        
+        <nav class="navbar">
+            <a href="navigation.html">Home</a>
+            <a href="About.html">About us</a>
+            <a href="#product">product</a>
+            <a href="review.html">Review</a>
+            
+        </nav>
+
+        <div class="icon">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+           <a href="login.html"> <div class="fas fa-user" id="login-btn"></div></a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                 <img src="" alt="" width="100px" height="100px">
+                 <div class="content">
+                    <h3>madolduwa</h3>
+                    <span class="price">lkr 300/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+        
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                 <img src="images/pic2.jpg" alt="" width="100px" height="100px">
+                 <div class="content">
+                    <h3>hathpana</h3>
+                    <span class="price">lkr 300/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                 <img src="images/pic3.jpg" alt="" width="100px" height="100px">
+                 <div class="content">
+                    <h3>araliya</h3>
+                    <span class="price">lkr 300/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+
+            <div class="total">Total : lkr 900/- </div>
+             <a href="#" class="btn">checkout</a>
+        </div>
+</header> 
+        <!-- finish navigation bar-->
 
 
 <div class="image"></div>
@@ -104,6 +169,57 @@
 
     </div>
 </section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Logo / Brand -->
+        <div class="footer-box">
+            <h2 class="logo">📘 Book World</h2>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer-box">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">Editors Pick</a></li>
+                <li><a href="#">Best of 2026</a></li>
+                <li><a href="#">Featured</a></li>
+            </ul>
+        </div>
+
+        <!-- Help -->
+        <div class="footer-box">
+            <h3>Help</h3>
+            <ul>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Delivery & Returns</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>Copyright © 2026 Book World | Powered by Book World</p>
+    </div>
+</footer>
+<script src="navigation.js"></script>
 
 </body>
 </html>

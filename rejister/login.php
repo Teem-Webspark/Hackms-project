@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
 
             // Redirect to your desired link
             // Replace the URL below with your target page
-            header("Location: navigation");
+            header("Location: ./ navigation.html");
             exit();
 
         } else {

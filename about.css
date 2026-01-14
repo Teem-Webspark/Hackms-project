@@ -1,4 +1,4 @@
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
-
+/* FULL WIDTH HERO IMAGE */
 .image {
     width: 100%;
     height: 60vh;
@@ -26,21 +26,21 @@ body {
     }
 }
 
-
+/* SECTION FULL WIDTH */
 .about-section {
     width: 100%;
     padding: 60px 0;
     background: #f8f9fa;
 }
 
-
+/* CENTER CONTENT BUT KEEP PAGE FULL WIDTH */
 .about-container {
-    max-width: 1300px;   
+    max-width: 1300px;   /* readable width */
     margin: auto;
     padding: 40px;
 }
 
-
+/* HEADINGS */
 h1 {
     text-align: center;
     font-size: 3rem;
@@ -62,23 +62,23 @@ h2 {
     margin: 60px 0 30px;
     color: #330404;
 }
+
 p{
     text-align: center;
     font-size: 1.8rem;
     margin: 60px 0 30px;
     color: black;
-
 }
 
 
 h2 span {
     color: #fff;
     background: rgb(95, 24, 24);
-    padding: .7rem 1.2rem;
+    padding: .7rem .9rem;
     clip-path: polygon(100% 0%, 93% 50%,100% 99%,0% 100%,7% 50%,0% 0%);
 }
 
-
+/* GRID */
 .main-list {
     list-style: none;
     display: grid;
@@ -86,7 +86,7 @@ h2 span {
     gap: 30px;
 }
 
-
+/* CARDS */
 .main-list > li {
     background: #fff;
     padding: 30px;
@@ -103,7 +103,7 @@ h2 span {
     transform: translateY(-8px);
 }
 
-
+/* INNER LIST */
 .item {
     margin-top: 15px;
     padding-top: 15px;
@@ -130,7 +130,7 @@ h2 span {
     font-weight: bold;
 }
 
-
+/* CONTACT */
 .contact {
     text-align: center;
     margin-top: 80px;
@@ -141,7 +141,7 @@ h2 span {
     color: #490b0b;
 }
 
-
+/* MOBILE */
 @media (max-width: 768px) {
     .image {
         height: 40vh;
